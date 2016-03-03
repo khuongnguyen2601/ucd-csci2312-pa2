@@ -18,7 +18,7 @@ namespace Clustering {
 
         // Big three: cpy ctor, overloaded operator=, dtor
         Point(const Point &);
-        Point &operator=(const Point &);
+        Point & operator=(const Point &);
         ~Point();
 
         // Accessors & mutators
@@ -43,6 +43,7 @@ namespace Clustering {
         // Friends
         friend Point &operator+=(Point &, const Point &);
         friend Point &operator-=(Point &, const Point &);
+
         friend const Point operator+(const Point &, const Point &);
         friend const Point operator-(const Point &, const Point &);
 
